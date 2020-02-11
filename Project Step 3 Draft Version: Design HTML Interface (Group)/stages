@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta name="Meal Plans" charset="UTF-8">
+    <title>Meal Plans</title>
+    <link rel="stylesheet" href="./meal_planner_files/style.css">
+  </head>
+  
+  <body>
+	<ul id="list-nav">
+		<li><a href="login.html">Login</a></li>
+		<li><a href="users.html">Your Household</a></li>
+		<li><a href="meal_plans.html">House Meal Plans</a></li>
+		<li><a href="recipes.html">Recipes</a></li>
+		<li><a href="order.html">My Orders</a></li>
+		<li><a href="index.html">Home</a></li>
+	</ul>
+    <h1>Meal Plans</h1>
+
+    <form>
+        <input type="button" onclick="window.location.href = './meal_plan_add.html'" value="Add Meal Plan">
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th> ID </th>
+          <th> Orders </th>
+          <th> Price </th>
+          <th> Filled </th>
+        </tr>
+      </thead>
+      <tbody>
+          <td> 0001 </td>
+          <td> <ol>
+            <li>1234</li>
+            <li>1235</li>
+            <li>1236</li>
+          </ol> </td>
+          <td> $10 </td>
+          <td> <form>
+              <input type="checkbox" name="filled" value="filled" checked readonly>
+            </form> </td>
+      </tbody>
+    </table>
+
+  </body>
+
+</html>
